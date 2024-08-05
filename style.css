@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --cyan-opacity: hsla(178, 100%, 50%, 0.5);
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+#entire-page {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--very-dark-blue-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card-container {
+    background-color: var(--very-dark-blue-card);
+    width: 22rem;
+    padding: 1.5rem;
+    margin: 4rem 0 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 0.4em hsl(216, 69%, 10%);
+}
+
+.img-card {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 18rem;
+    background: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-icon {
+    display: none;
+}
+
+
+.img-card:hover {
+    height: 18rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(var(--cyan-opacity) 100%, var(--white)), url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.img-card:hover .view-icon {
+    display: block;
+}
+
+.card-heading {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card-heading:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.card-text {
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+
+.price-date-block {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eth, .date {
+    display: flex;
+    align-items: center;
+}
+
+.nft-price {
+    margin-left: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--cyan);
+}
+
+.days {
+    margin-left: 0.4rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--soft-blue)
+}
+
+.hr {
+    border: 1px solid var(--very-dark-blue-line);
+}
+
+.avatar-block {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.avatar-img {
+    width: 2.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.avatar-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--soft-blue);
+}
+
+.white-text {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.white-text:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--white);
+}
+
+.attribution a { 
+    color: var(--white); 
+}
+
