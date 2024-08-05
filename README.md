@@ -40,7 +40,7 @@ Mobile View
 ### Links
 
 - Solution URL: [My Solution](https://github.com/BANKOLEDO/nft-preview-card-page)
-- Live Site URL: [Page Preview](https://your-live-site-url.com)
+- Live Site URL: [Page Preview](https://bankoledo.github.io/nft-preview-card-page/)
 
 ## My process
 
